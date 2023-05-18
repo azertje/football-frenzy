@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/8281b70098.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Football Frenzy"></a>
+        </div>
+        <div class="navbar">
+            <div class="close-nav"><button>×</button></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">SCORES</a></li>
+                    <li><a href="standings.html">STANDINGS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bar">
+            <button><i></i></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Scores</h1>
+      <div class="button-container">
+        <button type="button" id="scoreBtn1" onclick="fetchBtn1()"></button>
+        <button type="button" id="scoreBtn2" onclick="fetchBtn2()"></button>
+        <button type="button" id="scoreBtn3" onclick="fetchBtn3()"></button>
+        <button type="button" id="scoreBtn4" onclick="fetchBtn4()" autofocus></button>
+        <button type="button" id="scoreBtn5" onclick="fetchBtn5()"></button>
+        <button type="button" id="scoreBtn6" onclick="fetchBtn6()"></button>
+        <button type="button" id="scoreBtn7" onclick="fetchBtn7()"></button>
+      </div>
+      <div class="container">
+        <div id="eplTable" class="matches-table"></div>
+        <div id="laligaTable" class="matches-table"></div>
+        <div id="serieaTable" class="matches-table"></div>
+        <div id="bundesligaTable" class="matches-table"></div>
+        <div id="ligueTable" class="matches-table"></div>
+    </div>
+    </main>
+    <footer>
+      <p>Copyright © 2023 Football Frenzy. All rights reserved</p>
+      <div class="socials">
+        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com"><i id="social-ig" class="fa fa-instagram"></i></a>
+      </div>
+    </footer>
+   <script src="js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/8281b70098.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html"
+                        ><img src="images/logo.png" alt="Football Frenzy"
+                    /></a>
+                </div>
+                <div class="navbar">
+                    <div class="close-nav"><button>×</button></div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">SCORES</a></li>
+                            <li><a href="standings.html">STANDINGS</a></li>
+                            <li><a href="news.html">NEWS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-bar">
+                    <button><i></i></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Standings</h1>
+            <div class="button-container" id="standings-btn-container">
+                <button type="button" id="premierBtn" onclick="setPremierId()">Premier League</button>
+                <button type="button" id="laligaBtn" onclick="setLaligaId()">La Liga</button>
+                <button type="button" id="serieaBtn" onclick="setSerieaId()">Serie A</button>
+                <button type="button" id="bundesligaBtn" onclick="setBundesligaId()">Bundesliga</button>
+                <button type="button" id="ligueBtn" onclick="setLigueId()">Ligue 1</button>
+            </div>
+            
+            <!--WIDGET DE API FOOTBALL-->
+            <div
+                id="wg-api-football-standings"
+                data-host="v3.football.api-sports.io"
+                data-key="bd2f5b92aa740dde6547b6a107374ab3"
+                data-league="39"
+                data-team=""
+                data-season="2022"
+                data-theme="grey"
+                data-show-errors="false"
+                data-show-logos="true"
+                class="wg_loader"
+            ></div>
+            <script
+                type="module"
+                src="https://widgets.api-sports.io/2.0.3/widgets.js"
+            ></script>
+        </main>
+        <footer>
+            <p>Copyright © 2023 Football Frenzy. All rights reserved</p>
+            <div class="socials">
+                <a href="https://www.twitter.com"
+                    ><i class="fa fa-twitter"></i
+                ></a>
+                <a href="https://www.instagram.com"
+                    ><i id="social-ig" class="fa fa-instagram"></i
+                ></a>
+            </div>
+        </footer>
+        <script src="js/standings.js"></script>
+    </body>
+</html>

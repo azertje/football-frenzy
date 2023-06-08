@@ -52,7 +52,7 @@ function eplFetch(fetchDate) {
     la lliga, i la temporada que volem obtenir.
     */
     fetch(
-        `https://v3.football.api-sports.io/fixtures?date=${fetchDate}&league=39&season=2022`,
+        `https://v3.football.api-sports.io/fixtures?date=2023-05-20&league=39&season=2022`,
         {
             method: "GET",
             headers: {
@@ -160,7 +160,7 @@ function laligaFetch(fetchDate) {
     laligaTable.appendChild(laligaTitle);
 
     fetch(
-        `https://v3.football.api-sports.io/fixtures?date=${fetchDate}&league=140&season=2022`,
+        `https://v3.football.api-sports.io/fixtures?date=2023-05-20&league=140&season=2022`,
         {
             method: "GET",
             headers: {
@@ -247,7 +247,7 @@ function serieaFetch(fetchDate) {
     serieaTable.appendChild(serieaTitle);
 
     fetch(
-        `https://v3.football.api-sports.io/fixtures?date=${fetchDate}&league=135&season=2022`,
+        `https://v3.football.api-sports.io/fixtures?date=2023-05-20&league=135&season=2022`,
         {
             method: "GET",
             headers: {
@@ -334,7 +334,7 @@ function bundesligaFetch(fetchDate) {
     bundesligaTable.appendChild(bundesligaTitle);
 
     fetch(
-        `https://v3.football.api-sports.io/fixtures?date=${fetchDate}&league=78&season=2022`,
+        `https://v3.football.api-sports.io/fixtures?date=2023-05-20&league=78&season=2022`,
         {
             method: "GET",
             headers: {
@@ -421,7 +421,7 @@ function ligueFetch(fetchDate) {
     ligueTable.appendChild(ligueTitle);
 
     fetch(
-        `https://v3.football.api-sports.io/fixtures?date=${fetchDate}&league=61&season=2022`,
+        `https://v3.football.api-sports.io/fixtures?date=2023-05-20&league=61&season=2022`,
         {
             method: "GET",
             headers: {
@@ -502,11 +502,11 @@ function ligueFetch(fetchDate) {
     }
 }
 
-eplFetch(dateString);
-laligaFetch(dateString);
-serieaFetch(dateString);
-bundesligaFetch(dateString);
-ligueFetch(dateString);
+eplFetch();
+laligaFetch();
+serieaFetch();
+bundesligaFetch();
+ligueFetch();
 
 //Afegeix la classe "selected" al 4t botó, que és el que volem que etigui seleccionat per defecte
 document.getElementById("scoreBtn4").classList.add("selected");
